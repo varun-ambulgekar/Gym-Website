@@ -8,7 +8,7 @@ Gym Information: Users can view essential details about the gym, including servi
 User Authentication: Provides secure user registration and login features, allowing users to create accounts, sign in, and manage their profiles.
 Contact API: An integrated API that enables users to send inquiries or feedback directly to the gym.
 Technologies Used
-Frontend: Developed with React for an interactive and responsive user interface.
-Backend: Built with Node.js and Express for efficient server-side processing and API management.
-Database: MongoDB for flexible data storage and management.
-Authentication: JWT is used for secure user authentication.
+Frontend: Developed with html,css,javascript for an interactive and responsive user interface.
+Backend: Built with php for efficient server-side processing and API management.
+Database: MySQL for flexible data storage and management.
+
