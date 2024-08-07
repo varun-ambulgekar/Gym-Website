@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .center{
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 100px;
+            width: 100px;
+            -webkit-filter: drop-shadow(5px 5px 5px #000000);
+            filter: drop-shadow(5px 5px 5px #000000);
+        }
+        .field {
+            margin-bottom: 20px;
+            border: 4px solid #ffffff;
+            border-radius: 10px;
+            padding: 10px;
+            -webkit-filter: drop-shadow(5px 5px 5px #000000);
+            filter: drop-shadow(5px 5px 5px #000000);
+        }
+        .submit:hover{
+    filter: drop-shadow(5px 5px 5px #000000);
+    padding-right: 25px;
+}
+.submit {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: none;
+    color: #000000;
+    text-align: center;
+    font-size: 16px;
+    padding: 20px;
+    width: 100px;
+    height: 50px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .submit span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .submit span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  .submit:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Membership Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background: linear-gradient(180deg, rgb(98, 98, 98) 0%, rgb(168, 168, 168) 35%, rgb(23, 23, 23) 100%);">
+    <div class="bg-image"></div>
+    <img class="center"
+    id ="logo" src="dumbell-removebg-preview.png" 
+    alt="My Fitness" >
+    <h1 style="font-family:myFirstFont;">Gym Membership Registration</h1>
+    <form action="registration_process.php" method="post">
+        <fieldset class="field">
+            <legend>Personal Information:</legend>
+            <label for="full_name">Full Name:</label><br>
+            <input type="text" id="full_name" name="full_name" required><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd"><br><br>
+
+            <label for="pwd">Confirm Password:</label>
+            <input type="password" id="pwd" name="pwd"><br><br>
+        </fieldset>
+
+        <fieldset class="field">
+            <legend>Address Information:</legend>
+            <label for="address">Street Address:</label><br>
+            <input type="text" id="address" name="address" required><br><br>
+
+            <label for="city">City:</label><br>
+            <input type="text" id="city" name="city" required><br><br>
+
+
+            <label for="zip">Zip/Postal Code:</label><br>
+            <input type="INT" id="zip" name="zip" required><br><br>
+
+            <label for="country">Country:</label><br>
+            <input type="text" id="country" name="country" required><br><br>
+        </fieldset>
+
+        <fieldset class="field">
+            <legend>Membership Plan:</legend>
+            <label for="membership_type">Membership Type:</label><br>
+            <select id="membership_type" name="membership_type" required>
+                <option value="Basic">Basic</option>
+                <option value="Premium">Basic+Personal Trainer</option>
+                
+            </select><br><br>
+
+            <label for="duration">Duration:</label><br>
+            <select id="duration" name="duration" required>
+                <option value="1 Month">1 Month</option>
+                <option value="3 Months">3 Months</option>
+                <option value="6 Months">6 Months</option>
+                <option value="1 Year">1 Year</option>
+            </select><br><br>
+        </fieldset>
+
+        <fieldset class="field">
+            <legend>Terms and Conditions:</legend>
+            <label>
+                <pre><input type="checkbox" name="agree_terms" required> I agree to the terms and conditions of membership at My Fitness.</pre>
+            </label><br><br>
+        </fieldset>
+        <a href="login.html">already existing user?</a><br><br>
+
+        <input type="submit" value="Submit" class="submit"><br><br>
+
+       
+    </form>
+    
+    <div>
+    
+        <pre>made by: Team mkc SY2</pre>
+        <p>Forum</p>
+        <p>About</p>
+        <img class="footerpng" src="youtube-removebg-preview.png">
+        <img class="footerpng" src="instagram-removebg-preview.png">
+        <pre>My Fitness Website is optimised for your basic fitness needs with proper guidance and proper research.</pre>
+    
+    </div>  
+    
+</body>
+</html>

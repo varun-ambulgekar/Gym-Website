@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;   
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    color: white;
+    display: inline-block;
+    width: 150px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    margin-top: 8px;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(Franchise.ttf);
+  }
+
+div 
+{
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+.footerpng{
+    width: 30px;
+    height: 30px;
+}

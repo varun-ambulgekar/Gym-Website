@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+    <link rel="stylesheet" href="style_home.css">
+</head>
+<body>
+    <div class="navbar">
+      
+        <div class="nav-logo border">
+            <div class="logo">
+              
+            </div>
+        </div>
+        <ul class="navbar-nav">
+            <ul class="nav-item"><a href="#home" class="nav-link" onclick="scrollToContent('home')">Home</a></ul> 
+            <ul class="nav-item"><a href="#services" class="nav-link" onclick="scrollToContent('services')">Services</a></ul>
+            <ul class="nav-item"><a href="#about-us" class="nav-link" onclick="scrollToContent('about-us')">About us</a></ul>
+            <ul class="nav-item"><a href="#contact-us" class="nav-link" onclick="scrollToContent('contact-us')">Contact us</a></ul>
+            <ul class="nav-item"><a href="#" class="nav-link" id="myButton">Login/Register</a></ul>
+        </ul>
+        <script>
+            document.getElementById("myButton").addEventListener("click", function() {
+              window.location.href = "registration.html";
+            });
+        </script>
+    </div>
+    
+    <section id="home">
+        
+      <h2 >"Build strength, embrace change. Gym Planet, your fitness frontier."</h2>
+    
+        <div class="container">
+          <div class="slider-wrapper">
+            <div class="slider">
+            <img id="slide-1" src="slider1.jpg" alt="#">
+            <img id="slide-2" src="slider2.jpg" alt="#">
+            <img id="slide-3" src="slider3.jpg" alt="#">
+            <img id="slide-4" src="slider4.jpg" alt="#">
+            <img id="slide-5" src="img5.jpg" alt="#">
+          </div>
+          <div class="slider-nav">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+            <a href="#slide-3"></a>
+            <a href="#slide-4"></a> 
+            <a href="#slide-5"></a> 
+            
+          </div>
+        </div>
+    </div>
+
+  <section id="services">
+      <h2>Our Services</h2>
+      <div class="card-container">
+       
+        <div class="card">
+            <img src="box1.jpg" alt="#">
+            <div class="card-content">
+                <h3>Badminton Courts</h3>
+                <p>Passionate about Badminton?
+                    Contact us for the best
+                    badmintion courts & enjoy
+                    the game to the fullest.
+                </p>
+                <a href="#contact-us" class="btn">Enquire now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="box2.jpg" alt="#">
+            <div class="card-content">
+                <h3>Gym</h3>
+                <p>We are one of the best gym specializing in bodybuilding, 
+                    workout and weight Training
+                    with fitness knowledge. </p>
+                <a href="#contact-us" class="btn">Enquire now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="box3.jpeg" alt="#">
+            <div class="card-content">
+                <h3>Swimming Classes</h3>
+                <p>Swimming is one of the fun workout
+                    options to stay healthy. Contact
+                    us for the best swimming classes.
+                </p>
+                <a href="#contact-us" class="btn">Enquire now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="box4.jpg" alt="#">
+            <div class="card-content">
+                <h3>Supplements</h3>
+                <p>Elevate your performance and optimize 
+                    your gains with our premium range
+                    of gym supplies.Contact us for further details.
+                </p>
+                <a href="#contact-us" class="btn">Enquire now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="box5.webp" alt="#">
+            <div class="card-content">
+                <h3>Beginners</h3>
+                <p>Train yourself with our
+                    professional coach by attending
+                    our session thrice a week
+                    for an hour of practice.</p>
+                <a href="#contact-us" class="btn">Enquire now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="box6.jpg" alt="#">
+            <div class="card-content">
+                <h3>Yoga Classes</h3>
+                <p>Find your inner balance and strength with
+                    our rejuvenating yoga classes.Join us for a transformative 
+                    journey towards well-being.
+                </p>
+                <a href="#contact-us" class="btn">Enquire now</a>
+            </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section id="about-us">
+    <div class="abt">
+    <h2>About us</h2>
+    <img src="ab1.webp" alt="#">
+    <p>Improve your fitness at Gym Planet. We are Gym Planet and we help our members to achieve their fitness goal in a unique way
+        We offer variety of options in Membership, & 
+        Personal training to individual customized programme.
+        We have the experience to work with a variety of clients from, Strength athletes, 
+        Working professionals, 
+        School athletes and to the general fitness clients.
+    </p>
+    </div>
+    </section>
+
+    <section id="contact-us">
+        <div class="contact-container">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                <div class="contact-left-title">
+                    <h2>Get in touch</h2>
+                    <hr>
+                </div>
+                <input type="hidden" name="access_key" value="69019e2f-924d-46ba-b4b5-12ffcc384824">
+                <input type="text" name="name" placeholder="Your Name" class="contact-input" required>
+               
+                <input type="email" name="email" placeholder="Your Email" class="contact-input" required>
+                <textarea name="message" placeholder="Your Message" class="contact-input" ></textarea>
+                <button type="submit">Submit <img src="arrow_icon.png" alt=""></button>
+            </form>
+            <div class="contact-right">
+                <img src="right_img.png" alt="">
+            </div>
+        </div>
+
+
+    </section>
+    <button onclick="goToTop()" id="goToTopBtn" title="Go to top">&#8679;</button>
+
+
+    
+
+    
+    <script src="script.js"></script>
+   
+</body>
+
+</html>
+
